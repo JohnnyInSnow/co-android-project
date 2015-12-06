@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="遊玩者名字"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="player1"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_weight="0.00"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="player2"
+        android:id="@+id/textView4"
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="124dp"
+        android:layout_height="75dp"
+        android:text="玩家名字設定"
+        android:id="@+id/button2"
+        android:textColor="#ffffff"
+        android:layout_gravity="right" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="40dp"
+                android:id="@+id/textView12"
+                android:textColor="#ffffff"
+                android:text="關卡數設定"
+                android:textSize="20dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/levelGroup">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:id="@+id/radioButton"
+                            android:checked="false"
+                            android:layout_weight="1" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:id="@+id/radioButton2"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:layout_weight="1" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:id="@+id/radioButton3"
+                            android:checked="false"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </RadioGroup>
+
+            </TableRow>
+
+            <Button
+                android:layout_width="121dp"
+                android:layout_height="77dp"
+                android:text="關卡數設定"
+                android:id="@+id/btnLevelSetting"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="遊戲所需的資料已經完成，請按下game紐"
+                android:id="@+id/textView9"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/setting.xml -->

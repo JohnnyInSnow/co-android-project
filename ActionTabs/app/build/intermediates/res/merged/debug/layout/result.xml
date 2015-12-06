@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="遊戲成績小計"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textColor="#010001"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="player1"
+        android:textColor="#010101"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_weight="0.21"
+        android:textSize="25dp"
+        android:text="..." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="player2"
+        android:id="@+id/textView"
+        android:textColor="#010101"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/textView"
+        android:layout_weight="0.17"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_weight="0.56"
+        android:background="#a1ffb6" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="176dp"
+            android:layout_height="119dp"
+            android:text="重新起局，請按全部清除紐後回到setting頁面"
+            android:id="@+id/textView3"
+            android:textColor="#010101"
+            android:textSize="20dp"
+            android:layout_weight="0.02" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:text="全部清除"
+            android:id="@+id/button"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/result.xml -->
