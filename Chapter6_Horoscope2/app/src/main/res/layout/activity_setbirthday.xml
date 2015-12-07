@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	<TextView  
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:text="輸入你的名字"
+		/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:text="player1"
+		/>
+	<EditText android:id="@+id/etMonth"
+		android:inputType="number"
+		android:textSize="20sp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:text="player2"
+		/>
+	<EditText android:id="@+id/etDay"
+	    android:inputType="number"
+	    android:textSize="20sp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		/>
+	<Button android:id="@+id/submit"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="顯示名字"
+		/>
+</LinearLayout>

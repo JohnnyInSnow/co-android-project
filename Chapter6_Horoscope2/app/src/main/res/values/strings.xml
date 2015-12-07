@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">星座計算 (V2)</string>
+    
+	<string name="birthday_hint">請輸入您的生日</string>
+	<string name="month_hint">月</string>
+	<string name="day_hint">日</string>
+	<string name="btn_hint">得知星座</string>
+	<string name="result_hint">您的星座是：</string>
+	<string name="input_error">錯誤的月份或日期</string>
+	<string name="return_text">回到上一頁</string>
+	<string name="Aries">白羊座</string>
+	<string name="Taurus">金牛座</string>
+	<string name="Gemini">雙子座</string>
+	<string name="Cancer">巨蟹座</string>
+	<string name="Leo">獅子座</string>
+	<string name="Virgo">處女座</string>
+	<string name="Libra">天秤座</string>
+	<string name="Scorpio">天蠍座</string>
+	<string name="Sagittarius">射手座</string>
+	<string name="Capricorn">摩羯座</string>
+	<string name="Aquarius">寶瓶座</string>
+	<string name="Pisces">雙魚座</string>
+	
+	<string name="horoinfo">星座資訊</string>
+</resources>
