@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 
 		// create the fragments
 		Fragment mteacherFragment = new settingPage();
-		Fragment mstudentmentFragment = new StudentFragment();
+		Fragment mstudentmentFragment = new levelPage();
 		Fragment mgroupFragment = new resultPage();
 	
 		// bind the fragments to the tabs - set up tabListeners for each tab
