@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:3:5-22
 		INJECTED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml
@@ -24,28 +24,34 @@ ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/mai
 		INJECTED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:11:5-25:19
+ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:11:5-30:19
 	android:label
 		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup
 		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:12:9-35
 	android:icon
 		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:13:9-45
-activity#cs.hung.MainActivity
-ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:15:9-24:20
+activity#cs.hung.initPage
+ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:15:9-25:20
 	android:label
-		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:17:13-45
+		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:18:13-45
 	android:theme
-		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:18:13-54
+		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:19:13-54
 	android:name
-		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:16:13-48
+		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:16:13-44
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:19:13-23:29
+ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:20:17-69
+ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:23:27-74
+activity#cs.hung.MainActivity
+ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:26:9-29:20
+	android:label
+		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:28:13-54
+	android:name
+		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:27:13-48
