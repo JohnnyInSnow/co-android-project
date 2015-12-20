@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/appbackpage"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,36 +52,36 @@
         android:layout_gravity="right" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
-            <TextView
-                android:layout_width="196dp"
-                android:layout_height="40dp"
-                android:id="@+id/textView12"
-                android:textColor="#ffffff"
-                android:text="關卡數設定"
-                android:textSize="20dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="382dp"
+                android:layout_height="147dp">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/levelGroup">
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/textView12"
+                        android:textColor="#ffffff"
+                        android:text="關卡數設定"
+                        android:textSize="20dp" />
 
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/levelGroup">
 
                         <RadioButton
                             android:layout_width="wrap_content"
@@ -87,16 +89,20 @@
                             android:text="3"
                             android:id="@+id/radioButton"
                             android:checked="false"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#010101"
+                             />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="5"
                             android:id="@+id/radioButton2"
-                            android:layout_gravity="center_horizontal"
                             android:checked="false"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#010101" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
@@ -104,25 +110,37 @@
                             android:text="7"
                             android:id="@+id/radioButton3"
                             android:checked="false"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-                </RadioGroup>
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#010000" />
 
-            </TableRow>
+                    </RadioGroup>
+                </LinearLayout>
 
-            <Button
-                android:layout_width="121dp"
-                android:layout_height="77dp"
-                android:text="關卡數設定"
-                android:id="@+id/btnLevelSetting"
-                android:layout_gravity="right" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:text="遊戲所需的資料已經完成，請按下game紐"
-                android:id="@+id/textView9"
-                android:textColor="#ffffff" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="76dp"
+                        android:text="關卡數設定"
+                        android:id="@+id/btnLevelSetting"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="遊戲所需的資料已經完成，請按下game紐"
+        android:id="@+id/textView9"
+        android:textColor="#ffffff"
+        android:layout_weight="0.18" />
 </LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/setting.xml -->
