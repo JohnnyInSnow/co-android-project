@@ -25,9 +25,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/p1edit"
         android:layout_weight="0.00"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:hint="please enter your name at p1"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,8 +41,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:textColor="#ffffff" />
+        android:id="@+id/p2edit"
+        android:textColor="#ffffff"
+        android:hint="please enter your name at p2"/>
 
     <Button
         android:layout_width="124dp"
@@ -143,4 +145,4 @@
         android:id="@+id/textView9"
         android:textColor="#ffffff"
         android:layout_weight="0.18" />
-</LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/setting.xml -->
+</LinearLayout><!-- From: file:/Users/jason/Downloads/co-android-project-action-bar-implement/ActionTabs/app/src/main/res/layout/setting.xml -->

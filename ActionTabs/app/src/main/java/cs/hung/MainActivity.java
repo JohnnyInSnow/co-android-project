@@ -6,21 +6,35 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
 	private static final String TAB_KEY_INDEX = "tab_key";
+	private EditText p1;
+	private EditText p2;
+	private Button buttonplayer;
 
-	/** Called when the activity is first created. */
+	/** Called when the activity is first crePlugins Suggestion
+	 Unknown features (Run Configuration[AndroidRunConfigurationType], Facet[android, android-gradle]) covered by disabled plugin detected.
+	 Enable plugins...
+	 Ignore Unknown Features
+	 ated. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+
+		SharedPreferences spref = getPreferences(MODE_WORLD_READABLE);
+
 
 		// ActionBar
 		ActionBar actionbar = getActionBar();
@@ -55,8 +69,40 @@ public class MainActivity extends Activity {
 		actionbar.addTab(mgroupTab);
 
 
+
+
 	
 
+	}
+	public void initComponent() {
+		p1 = (EditText)findViewById(R.id.p1edit);
+		p2 = (EditText)findViewById(R.id.p2edit);
+	}
+	private SharedPreferences settings;
+	private static final String data = "DATA";
+	private static final String p1edit = "p1";
+	private static final String p2edit = "p2";
+	public void readData(){
+		settings = getSharedPreferences(data,0);
+		p1.setText(settings.getString(p1edit, ""));
+		p2.setText(settings.getString(p2edit, ""));
+
+	}
+	public void saveData(){
+		settings = getSharedPreferences(data,0);
+		settings.edit()
+				.putString(p1edit, p1.getText().toString())
+				.putString(p2edit, p2.getText().toString())
+				.commit();
+	}
+	public void setEventListener() {
+		buttonplayer.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				saveData();
+				readData();
+			}
+		});
 	}
 
 	@Override
