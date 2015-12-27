@@ -12,7 +12,7 @@
 
 12/23 關卡4到7頁面遇到瓶頸 need help
 
-12/27 SharePreference for player name 完成
+12/27 SharePreference for player name, for level number have done.
 
 
 #下次檢查點
