@@ -33,9 +33,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		SharedPreferences spref = getPreferences(MODE_WORLD_READABLE);
-
-
 		// ActionBar
 		ActionBar actionbar = getActionBar();
 		actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -68,42 +65,8 @@ public class MainActivity extends Activity {
 		actionbar.addTab(mstudentTab);
 		actionbar.addTab(mgroupTab);
 
-		//initComponent();
+	}
 
-
-	
-
-	}
-	public void initComponent() {
-		p1 = (EditText)findViewById(R.id.p1edit);
-		p2 = (EditText)findViewById(R.id.p2edit);
-	}
-	private SharedPreferences settings;
-	private static final String data = "DATA";
-	private static final String p1edit = "p1";
-	private static final String p2edit = "p2";
-	public void readData(){
-		settings = getSharedPreferences(data,0);
-		p1.setText(settings.getString(p1edit, ""));
-		p2.setText(settings.getString(p2edit, ""));
-
-	}
-	public void saveData(){
-		settings = getSharedPreferences(data,0);
-		settings.edit()
-				.putString(p1edit, p1.getText().toString())
-				.putString(p2edit, p2.getText().toString())
-				.commit();
-	}
-	public void setEventListener() {
-		buttonplayer.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				saveData();
-				readData();
-			}
-		});
-	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

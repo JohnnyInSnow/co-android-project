@@ -49,7 +49,7 @@
         android:layout_width="124dp"
         android:layout_height="75dp"
         android:text="玩家名字設定"
-        android:id="@+id/button2"
+        android:id="@+id/btnNameSetting"
         android:textColor="#ffffff"
         android:layout_gravity="right" />
 

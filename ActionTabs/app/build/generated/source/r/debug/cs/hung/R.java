@@ -16,9 +16,9 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
+        public static final int btnClearAll=0x7f060007;
         public static final int btnLevelSetting=0x7f060011;
-        public static final int button=0x7f060007;
-        public static final int button2=0x7f06000b;
+        public static final int btnNameSetting=0x7f06000b;
         public static final int fragment_container=0x7f060001;
         public static final int imageButton=0x7f060000;
         public static final int levelGroup=0x7f06000d;
