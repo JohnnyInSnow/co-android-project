@@ -16,7 +16,8 @@
             android:name="cs.hung.initPage"
 
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Holo" >
+            android:theme="@android:style/Theme.Holo"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +26,8 @@
         </activity>
         <activity
             android:name="cs.hung.MainActivity"
-            android:label="@android:style/Theme.Holo" >
+            android:label="@android:style/Theme.Holo"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

@@ -21,6 +21,7 @@ public final class R {
         public static final int btnNameSetting=0x7f06000b;
         public static final int fragment_container=0x7f060001;
         public static final int imageButton=0x7f060000;
+        public static final int instruction=0x7f060012;
         public static final int levelGroup=0x7f06000d;
         public static final int menuitem_about=0x7f060017;
         public static final int menuitem_add=0x7f060015;
@@ -40,7 +41,6 @@ public final class R {
         public static final int textView2=0x7f060005;
         public static final int textView3=0x7f060006;
         public static final int textView4=0x7f060008;
-        public static final int textView9=0x7f060012;
     }
     public static final class layout {
         public static final int init=0x7f030000;

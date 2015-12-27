@@ -38,17 +38,30 @@ public class resultPage extends Fragment {
 
         String p1name = obj.getDefault("p1Name", getActivity());
         String p2name = obj.getDefault("p2Name",getActivity());
+        int level = obj.getDefaultForInt("level", getActivity());
 
-        if(p1name.equals("unknown")){
+        if(p1name.equals("")){
             p1display.setText("Player1");
         }else{
             p1display.setText(p1name);
         }
 
-        if(p2name.equals("unknown")){
+        if(p2name.equals("")){
             p2display.setText("Player2");
         }else{
             p2display.setText(p2name);
+        }
+
+        if(level == 0){
+
+        }else{
+            String temp = p1display.getText().toString();
+            temp = temp + "(共" + level + "關)";
+            p1display.setText(temp);
+
+            temp = p2display.getText().toString();
+            temp = temp + "(共" + level + "關)";
+            p2display.setText(temp);
         }
         //p1display.setText("12");
         //p2display.setText("45");

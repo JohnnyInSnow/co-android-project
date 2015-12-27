@@ -23,12 +23,13 @@ public class initPage extends Activity {
         enter.setOnClickListener(even1);
     }
 
+    /**
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {

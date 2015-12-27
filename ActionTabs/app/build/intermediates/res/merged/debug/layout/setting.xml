@@ -28,7 +28,7 @@
         android:id="@+id/p1edit"
         android:layout_weight="0.00"
         android:textColor="#ffffff"
-        android:hint="please enter your name at p1"/>
+        android:hint="請點擊這裡輸入玩家一名字"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/p2edit"
         android:textColor="#ffffff"
-        android:hint="please enter your name at p2"/>
+        android:hint="請點擊這裡輸入玩家二名字"/>
 
     <Button
         android:layout_width="124dp"
@@ -141,8 +141,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="遊戲所需的資料已經完成，請按下game紐"
-        android:id="@+id/textView9"
-        android:textColor="#ffffff"
-        android:layout_weight="0.18" />
+        android:id="@+id/instruction"
+        android:textColor="#ff1f30"
+        android:layout_weight="0.18"
+        android:editable="true"
+        android:enabled="true"
+        android:textSize="20dp" />
 </LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/setting.xml -->
