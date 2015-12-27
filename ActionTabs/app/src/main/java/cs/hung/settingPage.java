@@ -29,7 +29,7 @@ public class settingPage extends Fragment {
         //level7.setOnClickListener(even1);
 
 
-        return inflater.inflate(R.layout.setting, container, false);
+        return root;
     }
 
 

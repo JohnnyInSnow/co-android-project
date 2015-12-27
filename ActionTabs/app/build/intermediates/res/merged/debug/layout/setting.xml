@@ -145,4 +145,4 @@
         android:id="@+id/textView9"
         android:textColor="#ffffff"
         android:layout_weight="0.18" />
-</LinearLayout><!-- From: file:/Users/jason/Downloads/co-android-project-action-bar-implement/ActionTabs/app/src/main/res/layout/setting.xml -->
+</LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/setting.xml -->

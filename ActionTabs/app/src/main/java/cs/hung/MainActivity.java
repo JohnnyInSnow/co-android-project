@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
 		actionbar.addTab(mstudentTab);
 		actionbar.addTab(mgroupTab);
 
-
+		//initComponent();
 
 
 	

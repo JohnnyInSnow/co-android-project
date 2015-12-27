@@ -23,10 +23,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:id="@+id/p1Result"
         android:text="player1"
         android:textColor="#010101"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:editable="true"
+        android:enabled="true" />
 
     <TextView
         android:layout_width="match_parent"
@@ -40,9 +42,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="player2"
-        android:id="@+id/textView"
+        android:id="@+id/p2Result"
         android:textColor="#010101"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:editable="true"
+        android:enabled="true" />
 
     <TextView
         android:layout_width="match_parent"
@@ -81,4 +85,4 @@
             android:layout_gravity="right" />
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/Users/jason/Downloads/co-android-project-action-bar-implement/ActionTabs/app/src/main/res/layout/result.xml -->
+</LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/result.xml -->

@@ -11,4 +11,4 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.97"
         android:background="@drawable/appmainpage" />
-</LinearLayout><!-- From: file:/Users/jason/Downloads/co-android-project-action-bar-implement/ActionTabs/app/src/main/res/layout/init.xml -->
+</LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/init.xml -->
