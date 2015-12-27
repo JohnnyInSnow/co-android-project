@@ -10,7 +10,11 @@
 
 12/17 關卡1到3頁面已做成 需要解決關卡頁面匯入時兩個framelayout Thread問題
 
+12/23 關卡4到7頁面遇到瓶頸 need help
+
+12/27 SharePreference for player name 完成
+
 
 #下次檢查點
 
-12/23 12/24 SharePreference radioGroup 以及三關正常運作
+1/1 level page implement and pagerMananger implement
