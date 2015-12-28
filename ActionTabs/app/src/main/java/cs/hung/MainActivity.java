@@ -8,6 +8,7 @@ import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,13 +16,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.util.Log;
+
+import java.util.Map;
+import java.util.Set;
 
 public class MainActivity extends Activity {
-
+	public ActionBar.Tab mteacherTab;
+	public ActionBar.Tab mstudentTab;
+	public ActionBar.Tab mgroupTab;
 	private static final String TAB_KEY_INDEX = "tab_key";
 	private EditText p1;
 	private EditText p2;
 	private Button buttonplayer;
+	settingPage obj;
 
 	/** Called when the activity is first crePlugins Suggestion
 	 Unknown features (Run Configuration[AndroidRunConfigurationType], Facet[android, android-gradle]) covered by disabled plugin detected.
@@ -38,11 +46,11 @@ public class MainActivity extends Activity {
 		actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
 		// create new tabs and and set up the titles of the tabs
-		ActionBar.Tab mteacherTab = actionbar.newTab().setText(
+		mteacherTab = actionbar.newTab().setText(
 				getString(R.string.ui_tabname_teacher));
-		ActionBar.Tab mstudentTab = actionbar.newTab().setText(
+		mstudentTab = actionbar.newTab().setText(
 				getString(R.string.ui_tabname_student));
-		ActionBar.Tab mgroupTab = actionbar.newTab().setText(
+		mgroupTab = actionbar.newTab().setText(
 				getString(R.string.ui_tabname_group));
 		// 12_06 revise
 
@@ -56,6 +64,9 @@ public class MainActivity extends Activity {
 				getApplicationContext()));
 		mstudentTab.setTabListener(new MyTabsListener(mstudentmentFragment,
 				getApplicationContext()));
+
+
+
 		mgroupTab.setTabListener(new MyTabsListener(mgroupFragment,
 				getApplicationContext()));
 	
@@ -141,8 +152,30 @@ class MyTabsListener implements ActionBar.TabListener {
 
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-		
-		ft.replace(R.id.fragment_container, fragment);
+		switch (tab.getPosition()){
+			case 0:
+				ft.replace(R.id.fragment_container, fragment);
+				break;
+			case 1:
+				SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+				String p1 = prefs.getString("p1Name", "");
+				String p2 = prefs.getString("p2Name","");
+				int level = prefs.getInt("level", 0);
+
+				if((p1.equals("")) || (p2.equals("")) || (level == 0)){
+					ft.replace(R.id.fragment_container, fragment);
+					Log.e("message", "沒有完成輸入資料");
+				}else{
+					ft.replace(R.id.fragment_container, fragment);
+					Log.e("message", "有完成輸入資料");
+
+				}
+				break;
+			case 2:
+				ft.replace(R.id.fragment_container, fragment);
+				break;
+		}
+
 	}
 
 	@Override

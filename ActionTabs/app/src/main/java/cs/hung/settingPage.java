@@ -74,7 +74,9 @@ public class settingPage extends Fragment {
         getInstruction();
     }
 
-    private void preData(){
+
+
+    public void preData(){
         String p1 = getDefault("p1Name", getActivity());
         String p2 = getDefault("p2Name", getActivity());
         int level = getDefaultForInt("level", getActivity());
