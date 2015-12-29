@@ -19,4 +19,8 @@
 
 1/1 level page implement and pagerMananger implement
 
-程式沒有找到
+12/29
+1.程式沒有找到
+2.我有mac上技術問題
+  如果要把自己寫的程式碼放上去
+  是自己丟github desktop還是找到資料夾的位置呢？
