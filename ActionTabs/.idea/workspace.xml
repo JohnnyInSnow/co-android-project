@@ -45,8 +45,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cs/hung/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6073171">
-              <caret line="165" column="66" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.4390244">
+              <caret line="162" column="16" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1515#1553#0" expanded="true" />
@@ -2359,8 +2359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cs/hung/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6073171">
-          <caret line="165" column="66" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.4390244">
+          <caret line="162" column="16" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1515#1553#0" expanded="true" />
