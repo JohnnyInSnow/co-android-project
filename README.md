@@ -14,6 +14,24 @@
 
 12/27 SharePreference for player name, for level number have done.
 
+#app 未完成部份
+
+1.關卡2圖片切換問題
+
+2.關卡3記時秒數造成的閃退問題
+
+3.Game page 還未放入關卡layout，並測試是否可以讀到SharePreference之資料
+
+4.部分頁面以及元件的圖片正在繪製中
+
+5.還未測試ActionTab例外處裡(錯誤的操作流程是否可以偵測並防止或是引導)
+
+6.還未測試在教室的電腦是否可以用模擬器正常顯示app畫面，操作上不出錯
+
+7.1/7要報告用的簡報還未製作(這個需要等到app關卡頁面確定沒問題後才開始)
+
+8.app聲音的部份，目前setting page ,game start ,game end 擁有音效 result page ,error 的音效還在製作中
+
 
 #下次檢查點
 
