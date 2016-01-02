@@ -69,8 +69,8 @@ public class gameHandle extends Activity {
         player2Btn.setOnClickListener(even1);
 
 
-        play1Rule.setText("聽到開始音效 請心中自數10秒後立刻按下stop");
-        play2Rule.setText("聽到開始音效 請心中自數10秒後立刻按下stop");
+        play1Rule.setText("聽到開始音效 看到草莓立刻按下stop");
+        play2Rule.setText("聽到開始音效 看到草莓立刻按下stop");
     }
 
     @Override
@@ -190,7 +190,7 @@ public class gameHandle extends Activity {
                 if (game2End != 1) {
                     i = (int) (Math.random() * 100);
                     Log.e("message", "outer i = " + i);
-                    if (i >= 0 && i < 20) {
+                    if (i >= 0 && i < 15) {
                         i = 2;
                     } else {
                         if (i < 60) {
@@ -205,9 +205,9 @@ public class gameHandle extends Activity {
                 } else {
                     runnableForImage = null;
                 }
-                iv1.postDelayed(this, 500);
+                iv1.postDelayed(this, 800);
             }
-        },500);
+        },800);
     }
 
 
