@@ -8,7 +8,7 @@
 
 12/6 new branch for action bar implement(setting, game and result)
 
-12/17 關卡1到3頁面已做成 需要解決關卡頁面匯入時兩個framelayout Thread問題
+12/17 關卡做成 需要解決關卡頁面匯入時兩個framelayout Thread問題
 
 12/23 關卡4到7頁面遇到瓶頸 need help
 
@@ -16,7 +16,7 @@
 
 #app 未完成部份
 
-1.關卡2圖片切換問題
+1.關卡2圖片切換問題(myApplication3 完成)
 
 2.關卡3記時秒數造成的閃退問題
 
