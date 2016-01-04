@@ -1,6 +1,5 @@
 package cs.hung;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -21,7 +20,7 @@ import java.util.TimerTask;
 /**
  * Created by johnnyofsnow on 15/10/25.
  */
-public class game1Handle extends Fragment {
+public class game2Handle extends Fragment {
     private TextView play1Time;
     private TextView play2Time;
     private TextView play1Rule;
@@ -58,7 +57,7 @@ public class game1Handle extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View root = inflater.inflate(R.layout.game1layout, container, false);
+        View root = inflater.inflate(R.layout.game2layout, container, false);
         Log.e("message", "ONcreate()");
         iv1 = (ImageView)root.findViewById(R.id.imageView);
         play1Time = (TextView)root.findViewById(R.id.player1Result);

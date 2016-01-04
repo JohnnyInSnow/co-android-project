@@ -1,6 +1,5 @@
 package cs.hung;
 
-import cs.hung.R;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -11,8 +10,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
 import java.util.ArrayList;
 
@@ -28,8 +25,8 @@ public class levelPage extends Fragment {
         String p2 = prefs.getString("p2Name", "");
         int level = prefs.getInt("level", 0);
         list = new ArrayList<>();
-        list.add(new game1Handle());
-        fm = getChildFragmentManager();
+        list.add(new game2Handle());
+        fm = getChildFragmentManager(); // This line not wrong that it's require api 17 for using.
         if((p1.equals("")) || (p2.equals("")) || (level == 0)){
 
             root = inflater.inflate(R.layout.studentfragment, container, false);
@@ -37,11 +34,12 @@ public class levelPage extends Fragment {
             Log.e("message", "沒有完成輸入資料");
         }else{
             FragmentTransaction childFragTrans = fm.beginTransaction();
-            game1Handle game1 = new game1Handle();
+            game2Handle game1 = new game2Handle();
             childFragTrans.add(R.id.FL,game1);
             childFragTrans.addToBackStack("game1");
             childFragTrans.commit();
             root = inflater.inflate(R.layout.studentfragment, container, false);
+            // Although the fragment should be the game, but it needs the container(studentfragment) to hold it.
             Log.e("message", "有完成輸入資料");
         }
         return root;
