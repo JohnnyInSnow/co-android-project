@@ -1,6 +1,4 @@
-# action-bar-implement branch 
-1041 android development and media 
-
+#1041 android development and media 
 
 #Process and checkpoint
 
