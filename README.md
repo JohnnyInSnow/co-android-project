@@ -20,9 +20,9 @@
 
 2.關卡3記時秒數造成的閃退問題
 
-3.Game page 還未放入關卡layout，並測試是否可以讀到SharePreference之資料
+3.Game page 還未放入關卡layout，並測試是否可以讀到SharePreference之資料(前面完成，後面還在測試)
 
-4.部分頁面以及元件的圖片正在繪製中
+4.部分頁面以及元件的圖片正在繪製中(八成)
 
 5.還未測試ActionTab例外處裡(錯誤的操作流程是否可以偵測並防止或是引導)
 
@@ -35,7 +35,7 @@
 
 #下次檢查點
 
-1/1 level page implement and pagerMananger implement
+1/6 level page 不出現閃退
 
 12/29
 1.程式沒有找到(12/30放入)
