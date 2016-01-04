@@ -34,7 +34,7 @@ public class levelPage extends Fragment {
             Log.e("message", "沒有完成輸入資料");
         }else{
             FragmentTransaction childFragTrans = fm.beginTransaction();
-            game2Handle game1 = new game2Handle();
+            game1Handle game1 = new game1Handle();
             childFragTrans.add(R.id.FL,game1);
             childFragTrans.addToBackStack("game1");
             childFragTrans.commit();

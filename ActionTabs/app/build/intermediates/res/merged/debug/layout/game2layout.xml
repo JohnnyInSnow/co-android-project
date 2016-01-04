@@ -49,8 +49,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:gravity="center"
-                    android:visibility="visible" />
+                    android:gravity="center" />
             </RelativeLayout>
         </LinearLayout>
 
@@ -104,4 +103,4 @@
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/game1layout.xml -->
+</LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/game2layout.xml -->
