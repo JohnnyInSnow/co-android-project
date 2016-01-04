@@ -13,7 +13,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="170dp">
+            android:layout_height="170dp"
+            android:background="@drawable/appuiinterface">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -25,7 +26,9 @@
                     android:id="@+id/player1Button"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:background="@drawable/button2" />
+                    android:text="doʇs"
+                    android:textSize="30dp"
+                    android:textStyle="italic" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -37,19 +40,9 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:textColor="#fff13f" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:id="@+id/player1Result"
-                    android:layout_below="@+id/player1Button"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:gravity="center" />
             </RelativeLayout>
         </LinearLayout>
 
@@ -62,11 +55,13 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="170dp">
+            android:layout_height="170dp"
+            android:background="@drawable/appuiinterface_2">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp">
+                android:layout_height="170dp"
+                android:background="@drawable/appuiinterface">
 
                 <Button
                     android:layout_width="100dp"
@@ -74,19 +69,9 @@
                     android:id="@+id/player2Button"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="@drawable/button1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:id="@+id/player2Result"
-                    android:layout_above="@+id/player2Button"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:gravity="center" />
+                    android:text="stop"
+                    android:textSize="30dp"
+                    android:textStyle="italic" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -98,7 +83,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:textColor="#fff13f" />
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>

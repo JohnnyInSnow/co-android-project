@@ -2,7 +2,7 @@
 <resources>
     <!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="app_name">ActionTab</string>
+    <string name="app_name">Reflection</string>
     <string name="hello">Hello World, StartActivity!</string>
     <string name="ui_menu_about">about</string>
     <string name="ui_menu_add">add</string>

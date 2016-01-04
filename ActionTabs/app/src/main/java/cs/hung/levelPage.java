@@ -31,16 +31,27 @@ public class levelPage extends Fragment {
 
             root = inflater.inflate(R.layout.studentfragment, container, false);
 
-            Log.e("message", "沒有完成輸入資料");
+            Log.e("message", "開啟空畫面");
         }else{
             FragmentTransaction childFragTrans = fm.beginTransaction();
-            game1Handle game1 = new game1Handle();
-            childFragTrans.add(R.id.FL,game1);
-            childFragTrans.addToBackStack("game1");
+            if(level == 3){
+                game1Handle game1 = new game1Handle();
+                childFragTrans.add(R.id.FL,game1);
+                childFragTrans.addToBackStack("game1");
+            }else if(level == 5){
+                game2Handle game2 = new game2Handle();
+                childFragTrans.add(R.id.FL,game2);
+                childFragTrans.addToBackStack("game2");
+            }else{
+                game1Handle game1 = new game1Handle();
+                childFragTrans.add(R.id.FL,game1);
+                childFragTrans.addToBackStack("game1");
+            }
+
             childFragTrans.commit();
             root = inflater.inflate(R.layout.studentfragment, container, false);
             // Although the fragment should be the game, but it needs the container(studentfragment) to hold it.
-            Log.e("message", "有完成輸入資料");
+            Log.e("message", "開啟子畫面");
         }
         return root;
     }

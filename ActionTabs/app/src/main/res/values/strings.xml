@@ -2,7 +2,7 @@
 <resources>
 
     <string name="hello">Hello World, StartActivity!</string>
-    <string name="app_name">ActionTab</string>
+    <string name="app_name">Reflection</string>
 
     <!-- Tab Strings -->
     <string name="ui_tabname_teacher">setting</string>

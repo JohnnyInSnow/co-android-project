@@ -53,7 +53,7 @@ public class game1Handle extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         View root = inflater.inflate(R.layout.game1layout, container, false);
-        Log.e("message", "ONcreate()");
+        Log.e("message", "game1Handle ONcreate()");
         iv1 = (ImageView)root.findViewById(R.id.imageView);
         play1Time = (TextView)root.findViewById(R.id.player1Result);
         play2Time = (TextView)root.findViewById(R.id.player2Result);
@@ -77,7 +77,7 @@ public class game1Handle extends Fragment {
         super.onStart();
         player1Btn.setClickable(false);
         player2Btn.setClickable(false);
-        Log.e("message", "ONSTART()");
+        Log.e("message", "game1Handle ONSTART()");
         if(player1Stop == 2 && player2Stop == 2){
             init();
             m = MediaPlayer.create(getActivity(),R.raw.start);
@@ -441,13 +441,13 @@ public class game1Handle extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.e("message", "onDestroy()");
+        Log.e("message", "game1Handle onDestroy()");
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.e("message", "onResume()");
+        Log.e("message", "game1Handle onResume()");
     }
 /**
     @Override

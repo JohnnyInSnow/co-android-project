@@ -60,8 +60,8 @@ public class game2Handle extends Fragment {
         View root = inflater.inflate(R.layout.game2layout, container, false);
         Log.e("message", "ONcreate()");
         iv1 = (ImageView)root.findViewById(R.id.imageView);
-        play1Time = (TextView)root.findViewById(R.id.player1Result);
-        play2Time = (TextView)root.findViewById(R.id.player2Result);
+        //play1Time = (TextView)root.findViewById(R.id.player1Result);
+        //play2Time = (TextView)root.findViewById(R.id.player2Result);
         play1Rule = (TextView)root.findViewById(R.id.player1Hint);
         play2Rule = (TextView)root.findViewById(R.id.player2Hint);
         player1Btn = (Button)root.findViewById(R.id.player1Button);
@@ -145,8 +145,8 @@ public class game2Handle extends Fragment {
     }
 
     private void init(){
-        play1Time.setTextColor(Color.rgb(249,255,134));
-        play2Time.setTextColor(Color.rgb(164, 255, 176));
+        //play1Time.setTextColor(Color.rgb(249,255,134));
+        //play2Time.setTextColor(Color.rgb(164, 255, 176));
         play1Rule.setText("聽到開始音效 看到草莓立刻按下stop");
         play2Rule.setText("聽到開始音效 看到草莓立刻按下stop");
         player1Stop = 0;
@@ -166,8 +166,8 @@ public class game2Handle extends Fragment {
         player2Stop = 0;
         game2End = 0;
         i = 0;
-        ThreadDeclaration();
-        ThreadDeclaration2();
+        //ThreadDeclaration();
+        //ThreadDeclaration2();
         changeImage();
 
 
@@ -334,7 +334,7 @@ public class game2Handle extends Fragment {
                                     play1Rule.setText("player 1 Win!!");
                                     play2Rule.setText("player 1 Win!!");
                                     if (player2Sec > 1000) {
-                                        play2Time.setText("超過10秒");
+                                        //play2Time.setText("超過10秒");
                                     }
                                     //game2End = 1;
                                     break;
@@ -342,7 +342,7 @@ public class game2Handle extends Fragment {
                                     play1Rule.setText("player 2 Win!!");
                                     play2Rule.setText("player 2 Win!!");
                                     if (player1Sec > 1000) {
-                                        play1Time.setText("超過10秒");
+                                        //play1Time.setText("超過10秒");
                                     }
                                     //game2End = 1;
                                     break;
@@ -400,12 +400,12 @@ public class game2Handle extends Fragment {
         if(i == 2){
             game2End = 1;
             //m1.stopMyHandler();
-            count = 10001;
-            t.interrupt();
-            player1Stop = 1;
-            count1 = 10001;
-            t2.interrupt();
-            player2Stop = 1;
+            //count = 10001;
+            //t.interrupt();
+            //player1Stop = 1;
+            //count1 = 10001;
+            //t2.interrupt();
+            //player2Stop = 1;
             m = MediaPlayer.create(getActivity(),R.raw.draw);
             m.start();
             return who;
