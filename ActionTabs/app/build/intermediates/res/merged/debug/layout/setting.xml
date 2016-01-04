@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/appbackpage"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="遊玩者名字"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="player1"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/p1edit"
+        android:layout_weight="0.00"
+        android:textColor="#ffffff"
+        android:hint="請點擊這裡輸入玩家一名字"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="player2"
+        android:id="@+id/textView4"
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/p2edit"
+        android:textColor="#ffffff"
+        android:hint="請點擊這裡輸入玩家二名字"/>
+
+    <Button
+        android:layout_width="124dp"
+        android:layout_height="75dp"
+        android:text="玩家名字設定"
+        android:id="@+id/btnNameSetting"
+        android:textColor="#ffffff"
+        android:layout_gravity="right" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="382dp"
+                android:layout_height="147dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/textView12"
+                        android:textColor="#ffffff"
+                        android:text="關卡數設定"
+                        android:textSize="20dp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/levelGroup">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:id="@+id/radioButton"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#010101"
+                             />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:id="@+id/radioButton2"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#010101" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:id="@+id/radioButton3"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#010000" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="76dp"
+                        android:text="關卡數設定"
+                        android:id="@+id/btnLevelSetting"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instruction"
+        android:textColor="#ff1f30"
+        android:layout_weight="0.18"
+        android:editable="true"
+        android:enabled="true"
+        android:textSize="20dp" />
+</LinearLayout><!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/layout/setting.xml -->

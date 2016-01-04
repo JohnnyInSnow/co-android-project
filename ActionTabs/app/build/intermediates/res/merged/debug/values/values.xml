@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">ActionTab</string>
+    <string name="hello">Hello World, StartActivity!</string>
+    <string name="ui_menu_about">about</string>
+    <string name="ui_menu_add">add</string>
+    <string name="ui_menu_feedback">feedback</string>
+    <string name="ui_menu_quit">quit</string>
+    <string name="ui_menu_search">search</string>
+    <string name="ui_menu_send">send</string>
+    <string name="ui_menu_share">share</string>
+    <string name="ui_tabname_group">result</string>
+    <string name="ui_tabname_student">game</string>
+    <string name="ui_tabname_teacher">setting</string>
+</resources>
