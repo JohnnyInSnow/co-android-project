@@ -2,6 +2,8 @@ package cs.hung;
 
 import cs.hung.R;
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -12,8 +14,12 @@ import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import java.util.ArrayList;
+
 public class levelPage extends Fragment {
     View root;
+    FragmentManager fm;
+    ArrayList<Fragment> list;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -21,20 +27,24 @@ public class levelPage extends Fragment {
         String p1 = prefs.getString("p1Name", "");
         String p2 = prefs.getString("p2Name", "");
         int level = prefs.getInt("level", 0);
+        list = new ArrayList<>();
+        list.add(new game1Handle());
+        fm = getChildFragmentManager();
         if((p1.equals("")) || (p2.equals("")) || (level == 0)){
+
             root = inflater.inflate(R.layout.studentfragment, container, false);
+
             Log.e("message", "沒有完成輸入資料");
         }else{
-            root = inflater.inflate(R.layout.game1layout, container, false);
+            FragmentTransaction childFragTrans = fm.beginTransaction();
+            game1Handle game1 = new game1Handle();
+            childFragTrans.add(R.id.FL,game1);
+            childFragTrans.addToBackStack("game1");
+            childFragTrans.commit();
+            root = inflater.inflate(R.layout.studentfragment, container, false);
             Log.e("message", "有完成輸入資料");
-
         }
-
-
-
-
         return root;
     }
-    
 }
 
