@@ -88,39 +88,8 @@ public class levelPage extends Fragment {
         String p1 = prefs.getString("p1Name", "");
         String p2 = prefs.getString("p2Name", "");
         level = prefs.getInt("level", 0);
-        /**
-        list = new ArrayList<>();
-        list.add(new game2Handle());
-        fm = getChildFragmentManager(); // This line not wrong that it's require api 17 for using.
-        if((p1.equals("")) || (p2.equals("")) || (level == 0)){
+        preGrade();
 
-
-
-            Log.e("message", "開啟空畫面");
-        }else{
-            childFragTrans = fm.beginTransaction();
-            if(level == 3){
-                Log.e("message", "第一關");
-                game1Handle game1 = new game1Handle();
-                childFragTrans.replace(R.id.FL, game1);
-                //childFragTrans.addToBackStack("game1");
-            }else if(level == 5){
-                Log.e("message", "第二關");
-                game2Handle game2 = new game2Handle();
-                childFragTrans.replace(R.id.FL, game2);
-                //childFragTrans.addToBackStack("game2");
-            }else{
-                Log.e("message", "第三關");
-                game1Handle game1 = new game1Handle();
-                childFragTrans.replace(R.id.FL, game1);
-                //childFragTrans.addToBackStack("game1");
-            }
-            Log.e("message", "fragment commit之前");
-            childFragTrans.commit();
-            root = inflater.inflate(R.layout.studentfragment, container, false);
-            // Although the fragment should be the game, but it needs the container(studentfragment) to hold it.
-            Log.e("message", "開啟子畫面");
-        }*/
         if((p1.equals("")) || (p2.equals("")) || (level == 0)) {
 
             root = inflater.inflate(R.layout.studentfragment, container, false);
@@ -168,6 +137,21 @@ public class levelPage extends Fragment {
             root = inflater.inflate(R.layout.studentfragment, container, false);
         }
         return root;
+    }
+
+    public void preGrade(){
+        settingPage obj = new settingPage();
+        int p1Win = obj.getDefaultForInt("p1Win", getActivity());
+        int p2Win = obj.getDefaultForInt("p2Win", getActivity());
+        int p1Lose = obj.getDefaultForInt("p1Lose", getActivity());
+        int p2Lose = obj.getDefaultForInt("p2Lose", getActivity());
+
+        if((p1Win == 0) && (p2Win == 0) && (p1Lose == 0) && (p2Lose == 0)){
+            obj.setDefaults("p1Win", 1, getActivity());
+            obj.setDefaults("p2Win", 1, getActivity());
+            obj.setDefaults("p1Lose", 1, getActivity());
+            obj.setDefaults("p2Lose", 1, getActivity());
+        }
     }
 
     private void ThreadDeclaration() {
@@ -267,6 +251,13 @@ public class levelPage extends Fragment {
                                     if (player2Sec > 1000) {
                                         play2Time.setText("超過10秒");
                                     }
+                                    settingPage obj = new settingPage();
+                                    int p1Win = obj.getDefaultForInt("p1Win", getActivity());
+                                    int p2Lose = obj.getDefaultForInt("p2Lose", getActivity());
+                                    p1Win++;
+                                    p2Lose++;
+                                    obj.setDefaults("p1Win", p1Win, getActivity());
+                                    obj.setDefaults("p2Lose", p2Lose, getActivity());
 
                                     break;
                                 case 2:
@@ -276,6 +267,13 @@ public class levelPage extends Fragment {
                                     if (player1Sec > 1000) {
                                         play1Time.setText("超過10秒");
                                     }
+                                    settingPage obj1 = new settingPage();
+                                    int p2Win = obj1.getDefaultForInt("p2Win", getActivity());
+                                    int p1Lose = obj1.getDefaultForInt("p1Lose", getActivity());
+                                    p2Win++;
+                                    p1Lose++;
+                                    obj1.setDefaults("p2Win", p2Win, getActivity());
+                                    obj1.setDefaults("p1Lose", p1Lose, getActivity());
                                     break;
                                 case 3:
                                     play1Rule.setText("dawn");
@@ -294,7 +292,13 @@ public class levelPage extends Fragment {
                             case 1:
                                 play1Rule.setText("player 1 Win!!");
                                 play2Rule.setText("player 1 Win!!");
-
+                                settingPage obj = new settingPage();
+                                int p1Win = obj.getDefaultForInt("p1Win", getActivity());
+                                int p2Lose = obj.getDefaultForInt("p2Lose", getActivity());
+                                p1Win++;
+                                p2Lose++;
+                                obj.setDefaults("p1Win", p1Win, getActivity());
+                                obj.setDefaults("p2Lose", p2Lose, getActivity());
                                 //game2End = 1;
                                 break;
                             default:
@@ -321,12 +325,26 @@ public class levelPage extends Fragment {
                                     play1Rule.setText("player 1 Win!!");
                                     play2Rule.setText("player 1 Win!!");
                                     play2Time.setVisibility(View.INVISIBLE);
+                                    settingPage obj = new settingPage();
+                                    int p1Win = obj.getDefaultForInt("p1Win", getActivity());
+                                    int p2Lose = obj.getDefaultForInt("p2Lose", getActivity());
+                                    p1Win++;
+                                    p2Lose++;
+                                    obj.setDefaults("p1Win", p1Win, getActivity());
+                                    obj.setDefaults("p2Lose", p2Lose, getActivity());
 
                                     break;
                                 case 2:
                                     play1Rule.setText("player 2 Win!!");
                                     play2Rule.setText("player 2 Win!!");
                                     play1Time.setVisibility(View.INVISIBLE);
+                                    settingPage obj1 = new settingPage();
+                                    int p2Win = obj1.getDefaultForInt("p2Win", getActivity());
+                                    int p1Lose = obj1.getDefaultForInt("p1Lose", getActivity());
+                                    p2Win++;
+                                    p1Lose++;
+                                    obj1.setDefaults("p2Win", p2Win, getActivity());
+                                    obj1.setDefaults("p1Lose", p1Lose, getActivity());
                                     break;
                                 case 3:
                                     play1Rule.setText("dawn");
@@ -346,7 +364,13 @@ public class levelPage extends Fragment {
                             case 2:
                                 play1Rule.setText("player 2 Win!!");
                                 play2Rule.setText("player 2 Win!!");
-
+                                settingPage obj1 = new settingPage();
+                                int p2Win = obj1.getDefaultForInt("p2Win", getActivity());
+                                int p1Lose = obj1.getDefaultForInt("p1Lose", getActivity());
+                                p2Win++;
+                                p1Lose++;
+                                obj1.setDefaults("p2Win", p2Win, getActivity());
+                                obj1.setDefaults("p1Lose", p1Lose, getActivity());
                                 //game2End = 1;
                                 break;
                             default:

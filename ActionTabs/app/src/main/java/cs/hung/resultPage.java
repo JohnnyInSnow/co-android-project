@@ -23,7 +23,7 @@ public class resultPage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View root = inflater.inflate(R.layout.result, container,false);
+        View root = inflater.inflate(R.layout.result, container, false);
         p1display = (TextView)root.findViewById(R.id.p1Result);
         p2display = (TextView)root.findViewById(R.id.p2Result);
         allClear = (Button)root.findViewById(R.id.btnClearAll);
@@ -56,11 +56,25 @@ public class resultPage extends Fragment {
 
         }else{
             String temp = p1display.getText().toString();
-            temp = temp + "(勝/負)";
+            int p1Win = obj.getDefaultForInt("p1Win", getActivity());
+            int p1Lose = obj.getDefaultForInt("p1Lose", getActivity());
+            p1Win--;
+            p1Lose--;
+            if(p1Win != -1){
+                temp = temp + "( " + p1Win + " 勝 / " + p1Lose + " 負)";
+            }
+
             p1display.setText(temp);
 
             temp = p2display.getText().toString();
-            temp = temp + "(勝/負)";
+            int p2Win = obj.getDefaultForInt("p2Win", getActivity());
+            int p2Lose = obj.getDefaultForInt("p2Lose", getActivity());
+            p2Win--;
+            p2Lose--;
+            if(p2Win != -1){
+                temp = temp + "( " + p2Win + " 勝 / " + p2Lose + " 負)";
+            }
+
             p2display.setText(temp);
         }
         //p1display.setText("12");

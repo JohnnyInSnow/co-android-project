@@ -170,6 +170,7 @@ class MyTabsListener implements ActionBar.TabListener {
 					ft.replace(R.id.fragment_container, fragment);
 					Log.e("message", "有完成輸入資料");
 
+
 				}
 				break;
 			case 2:
