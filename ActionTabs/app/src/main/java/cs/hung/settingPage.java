@@ -104,11 +104,11 @@ public class settingPage extends Fragment {
             level7.setChecked(false);
         }else{
             levelCheck = true;
-            if(level == 3){
+            if(level == 1){
                 level3.setChecked(true);
-            }else if(level == 5){
+            }else if(level == 2){
                 level5.setChecked(true);
-            }else if(level == 7){
+            }else if(level == 3){
                 level7.setChecked(true);
             }else{
 
@@ -130,7 +130,7 @@ public class settingPage extends Fragment {
             count++;
         }else{
 
-            temp = temp + ",,關卡數未設定";
+            temp = temp + ",,關卡未設定";
         }
 
         if(count == 2){
@@ -201,17 +201,17 @@ public class settingPage extends Fragment {
 
             }else if(v.getId() == R.id.radioButton){
                 //Toast.makeText(getActivity(),"三關",Toast.LENGTH_SHORT).show();
-                setDefaults("level", 3, getActivity());
+                setDefaults("level", 1, getActivity());
                 preData();
                 getInstruction();
             }else if(v.getId() == R.id.radioButton2){
                 //Toast.makeText(getActivity(),"五關",Toast.LENGTH_SHORT).show();
-                setDefaults("level", 5, getActivity());
+                setDefaults("level", 2, getActivity());
                 preData();
                 getInstruction();
             }else if(v.getId() == R.id.radioButton3){
                 //Toast.makeText(getActivity(),"七關",Toast.LENGTH_SHORT).show();
-                setDefaults("level", 7, getActivity());
+                setDefaults("level", 3, getActivity());
                 preData();
                 getInstruction();
             }else{

@@ -56,11 +56,11 @@ public class resultPage extends Fragment {
 
         }else{
             String temp = p1display.getText().toString();
-            temp = temp + "(共" + level + "關)";
+            temp = temp + "(勝/負)";
             p1display.setText(temp);
 
             temp = p2display.getText().toString();
-            temp = temp + "(共" + level + "關)";
+            temp = temp + "(勝/負)";
             p2display.setText(temp);
         }
         //p1display.setText("12");

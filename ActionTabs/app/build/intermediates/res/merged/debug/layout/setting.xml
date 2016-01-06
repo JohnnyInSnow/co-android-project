@@ -77,7 +77,7 @@
                         android:layout_height="40dp"
                         android:id="@+id/textView12"
                         android:textColor="#ffffff"
-                        android:text="關卡數設定"
+                        android:text="選擇關卡"
                         android:textSize="20dp" />
 
                     <RadioGroup
@@ -88,7 +88,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="3"
+                            android:text="第一關"
                             android:id="@+id/radioButton"
                             android:checked="false"
                             android:layout_weight="1"
@@ -99,7 +99,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="5"
+                            android:text="第二關"
                             android:id="@+id/radioButton2"
                             android:checked="false"
                             android:layout_weight="1"
@@ -109,7 +109,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="7"
+                            android:text="第三關"
                             android:id="@+id/radioButton3"
                             android:checked="false"
                             android:layout_weight="1"
@@ -127,7 +127,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="76dp"
-                        android:text="關卡數設定"
+                        android:text="關卡確定"
                         android:id="@+id/btnLevelSetting"
                         android:layout_alignParentBottom="true"
                         android:layout_centerHorizontal="true" />
