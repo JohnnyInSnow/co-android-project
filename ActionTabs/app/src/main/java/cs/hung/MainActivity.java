@@ -146,12 +146,13 @@ class MyTabsListener implements ActionBar.TabListener {
 
 	@Override
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
-
-
+		ft.replace(R.id.fragment_container, fragment);
+		Log.e("message", "onTabReselected");
 	}
 
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
+		Log.e("message", "onTabselected");
 		switch (tab.getPosition()){
 			case 0:
 				ft.replace(R.id.fragment_container, fragment);
