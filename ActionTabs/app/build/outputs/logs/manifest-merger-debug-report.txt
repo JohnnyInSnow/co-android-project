@@ -30,7 +30,7 @@ ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/mai
 	android:allowBackup
 		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:13:9-45
+		ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:13:9-37
 activity#cs.hung.initPage
 ADDED from /Users/johnnyofsnow/Desktop/co-android-project/ActionTabs/app/src/main/AndroidManifest.xml:15:9-26:20
 	android:screenOrientation

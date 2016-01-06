@@ -97,6 +97,7 @@ public class levelPage extends Fragment {
         }else if(level == 1){
             level = 1;
             root = inflater.inflate(R.layout.game1layout, container, false);
+            Log.e("message", "fragment can load");
             iv1 = (ImageView)root.findViewById(R.id.imageView);
             play1Time = (TextView)root.findViewById(R.id.player1Result);
             play2Time = (TextView)root.findViewById(R.id.player2Result);
