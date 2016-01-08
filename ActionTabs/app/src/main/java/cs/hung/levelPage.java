@@ -287,23 +287,25 @@ public class levelPage extends Fragment {
                         }
                     }
                     if(level == 2){
-                        Log.e("message","level2  player2 click button");
-                        int who = decideWiner(1);
-                        switch (who) {
-                            case 1:
-                                play1Rule.setText("player 1 Win!!");
-                                play2Rule.setText("player 1 Win!!");
-                                settingPage obj = new settingPage();
-                                int p1Win = obj.getDefaultForInt("p1Win", getActivity());
-                                int p2Lose = obj.getDefaultForInt("p2Lose", getActivity());
-                                p1Win++;
-                                p2Lose++;
-                                obj.setDefaults("p1Win", p1Win, getActivity());
-                                obj.setDefaults("p2Lose", p2Lose, getActivity());
-                                //game2End = 1;
-                                break;
-                            default:
-                                break;
+                        if(game2End != 1) {
+                            Log.e("message", "level2  player2 click button");
+                            int who = decideWiner(1);
+                            switch (who) {
+                                case 1:
+                                    play1Rule.setText("player 1 Win!!");
+                                    play2Rule.setText("player 1 Win!!");
+                                    settingPage obj = new settingPage();
+                                    int p1Win = obj.getDefaultForInt("p1Win", getActivity());
+                                    int p2Lose = obj.getDefaultForInt("p2Lose", getActivity());
+                                    p1Win++;
+                                    p2Lose++;
+                                    obj.setDefaults("p1Win", p1Win, getActivity());
+                                    obj.setDefaults("p2Lose", p2Lose, getActivity());
+                                    //game2End = 1;
+                                    break;
+                                default:
+                                    break;
+                            }
                         }
                     }else if(level == 3){
 
@@ -360,23 +362,25 @@ public class levelPage extends Fragment {
                         }
                     }
                     if(level == 2){
-                        int who = decideWiner(2);
-                        switch (who) {
-                            case 2:
-                                play1Rule.setText("player 2 Win!!");
-                                play2Rule.setText("player 2 Win!!");
-                                settingPage obj1 = new settingPage();
-                                int p2Win = obj1.getDefaultForInt("p2Win", getActivity());
-                                int p1Lose = obj1.getDefaultForInt("p1Lose", getActivity());
-                                p2Win++;
-                                p1Lose++;
-                                obj1.setDefaults("p2Win", p2Win, getActivity());
-                                obj1.setDefaults("p1Lose", p1Lose, getActivity());
-                                //game2End = 1;
-                                break;
-                            default:
+                        if(game2End != 1) {
+                            int who = decideWiner(2);
+                            switch (who) {
+                                case 2:
+                                    play1Rule.setText("player 2 Win!!");
+                                    play2Rule.setText("player 2 Win!!");
+                                    settingPage obj1 = new settingPage();
+                                    int p2Win = obj1.getDefaultForInt("p2Win", getActivity());
+                                    int p1Lose = obj1.getDefaultForInt("p1Lose", getActivity());
+                                    p2Win++;
+                                    p1Lose++;
+                                    obj1.setDefaults("p2Win", p2Win, getActivity());
+                                    obj1.setDefaults("p1Lose", p1Lose, getActivity());
+                                    //game2End = 1;
+                                    break;
+                                default:
 
-                                break;
+                                    break;
+                            }
                         }
                     }else if(level == 3){
 
