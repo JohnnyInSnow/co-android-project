@@ -8,18 +8,18 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:background="@drawable/appbackpage">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:background="@drawable/appuiinterface">
+            android:baselineAligned="false">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/appuiinterface_2">
+                android:layout_height="match_parent">
 
                 <Button
                     android:layout_width="100dp"
@@ -65,7 +65,8 @@
             android:layout_width="match_parent"
             android:layout_height="122dp"
             android:id="@+id/imageView"
-            android:layout_gravity="bottom" />
+            android:layout_gravity="bottom"
+            android:background="#010101" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -74,8 +75,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:background="@drawable/appuiinterface">
+                android:layout_height="170dp">
 
                 <Button
                     android:layout_width="100dp"
