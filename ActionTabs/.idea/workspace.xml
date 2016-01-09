@@ -19,7 +19,7 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2920acc9-ea1b-4a53-a7ce-b092d1848c3b" name="Default" comment="" />
@@ -74,13 +74,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="levelPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="levelPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cs/hung/levelPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="303" column="33" selection-start-line="303" selection-start-column="33" selection-end-line="303" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.34573305">
+              <caret line="613" column="3" selection-start-line="613" selection-start-column="3" selection-end-line="613" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#23594#23936#0" expanded="true" />
+                <element signature="e#23935#23936#0" expanded="true" />
+                <element signature="e#24459#24801#0" expanded="true" />
+                <element signature="e#24800#24801#0" expanded="true" />
+                <element signature="e#25210#25552#0" expanded="true" />
+                <element signature="e#25551#25552#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,7 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game2layout.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game2layout.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/game2layout.xml">
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -1570,9 +1576,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/cs/hung/resultPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cs/hung/settingPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cs/hung/levelPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/game1layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/game2layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cs/hung/levelPage.java" />
       </list>
     </option>
   </component>
@@ -1773,7 +1779,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../jdk1.7.0_79" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="HT53VYC02181" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="3_7FWVGA_slider_API_23_small_device" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
@@ -2000,20 +2006,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="77" y="23" width="1363" height="805" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.49432248" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.84615386" sideWeight="0.31037092" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29608127" sideWeight="0.31037092" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.48221046" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.84615386" sideWeight="0.6896291" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29608127" sideWeight="0.6896291" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3154848" sideWeight="0.49735048" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2101,6 +2107,12 @@
           <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#23594#23936#0" expanded="true" />
+            <element signature="e#23935#23936#0" expanded="true" />
+            <element signature="e#24459#24801#0" expanded="true" />
+            <element signature="e#24800#24801#0" expanded="true" />
+            <element signature="e#25210#25552#0" expanded="true" />
+            <element signature="e#25551#25552#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2176,6 +2188,12 @@
           <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#23594#23936#0" expanded="true" />
+            <element signature="e#23935#23936#0" expanded="true" />
+            <element signature="e#24459#24801#0" expanded="true" />
+            <element signature="e#24800#24801#0" expanded="true" />
+            <element signature="e#25210#25552#0" expanded="true" />
+            <element signature="e#25551#25552#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2273,6 +2291,12 @@
           <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#23594#23936#0" expanded="true" />
+            <element signature="e#23935#23936#0" expanded="true" />
+            <element signature="e#24459#24801#0" expanded="true" />
+            <element signature="e#24800#24801#0" expanded="true" />
+            <element signature="e#25210#25552#0" expanded="true" />
+            <element signature="e#25551#25552#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2470,16 +2494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cs/hung/levelPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="303" column="33" selection-start-line="303" selection-start-column="33" selection-end-line="303" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/c12.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2530,6 +2544,22 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cs/hung/levelPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34573305">
+          <caret line="613" column="3" selection-start-line="613" selection-start-column="3" selection-end-line="613" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#23594#23936#0" expanded="true" />
+            <element signature="e#23935#23936#0" expanded="true" />
+            <element signature="e#24459#24801#0" expanded="true" />
+            <element signature="e#24800#24801#0" expanded="true" />
+            <element signature="e#25210#25552#0" expanded="true" />
+            <element signature="e#25551#25552#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

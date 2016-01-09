@@ -53,6 +53,7 @@ public class levelPage extends Fragment {
     int game2End = 0;
     int level = 0;
     int i = 1;
+    int gameCanOpen = 0;
     private Handler h1 = new Handler();
     private Runnable runnableForImage = new Runnable() {
         @Override
@@ -91,10 +92,11 @@ public class levelPage extends Fragment {
         preGrade();
 
         if((p1.equals("")) || (p2.equals("")) || (level == 0)) {
-
+            gameCanOpen = 0;
             root = inflater.inflate(R.layout.studentfragment, container, false);
             Log.e("message", "開啟空畫面");
-        }else if(level == 1){
+        }else if((level == 1) && (!p1.equals("")) && (!p2.equals(""))){
+            gameCanOpen = 1;
             level = 1;
             root = inflater.inflate(R.layout.game1layout, container, false);
             Log.e("message", "fragment can load");
@@ -112,7 +114,8 @@ public class levelPage extends Fragment {
 
             play1Rule.setText("聽到開始音效 請心中自數10秒後立刻按下stop");
             play2Rule.setText("聽到開始音效 請心中自數10秒後立刻按下stop");
-        }else if(level == 2){
+        }else if((level == 2) && (!p1.equals("")) && (!p2.equals(""))){
+            gameCanOpen = 1;
             level = 2;
             root = inflater.inflate(R.layout.game2layout, container, false);
             iv1 = (ImageView)root.findViewById(R.id.imageView);
@@ -134,6 +137,7 @@ public class levelPage extends Fragment {
             h1.removeCallbacks(runnableForImage);
             h1.postDelayed(runnableForImage,5000);
         }else{
+            gameCanOpen = 0;
             level = 3;
             root = inflater.inflate(R.layout.studentfragment, container, false);
         }
@@ -496,124 +500,126 @@ public class levelPage extends Fragment {
     public void onStart() {
         super.onStart();
         Log.e("message", "level page onStart");
-        if(level == 1){
-            player1Btn.setClickable(false);
-            player2Btn.setClickable(false);
-            Log.e("message", "game1Handle ONSTART()");
-            if(player1Stop == 2 && player2Stop == 2){
-                init1();
-                m = MediaPlayer.create(getActivity(),R.raw.start);
-                // stop for 5 second.
-                Timer time1 = new Timer();
-                TimerTask task1 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        game1Start();
-                        m.start();
-                        player1Btn.setClickable(true);
-                        player2Btn.setClickable(true);
-                    }
-                };
-                time1.schedule(task1, 5000);
-                //play1Time.setTextColor(Color.rgb(249, 255, 134));
-            }else if(player1Stop == 1 && player2Stop == 1){
-                init1();
+        if(gameCanOpen == 1){
+            if (level == 1) {
                 player1Btn.setClickable(false);
                 player2Btn.setClickable(false);
-                m = MediaPlayer.create(getActivity(),R.raw.start);
-                // stop for 5 second.
-                Timer time1 = new Timer();
-                TimerTask task1 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        game1Start();
-                        m.start();
-                        player1Btn.setClickable(true);
-                        player2Btn.setClickable(true);
-                    }
-                };
-                time1.schedule(task1, 5000);
+                Log.e("message", "game1Handle ONSTART()");
+                if (player1Stop == 2 && player2Stop == 2) {
+                    init1();
+                    m = MediaPlayer.create(getActivity(), R.raw.start);
+                    // stop for 5 second.
+                    Timer time1 = new Timer();
+                    TimerTask task1 = new TimerTask() {
+                        @Override
+                        public void run() {
+                            game1Start();
+                            m.start();
+                            player1Btn.setClickable(true);
+                            player2Btn.setClickable(true);
+                        }
+                    };
+                    time1.schedule(task1, 5000);
+                    //play1Time.setTextColor(Color.rgb(249, 255, 134));
+                } else if (player1Stop == 1 && player2Stop == 1) {
+                    init1();
+                    player1Btn.setClickable(false);
+                    player2Btn.setClickable(false);
+                    m = MediaPlayer.create(getActivity(), R.raw.start);
+                    // stop for 5 second.
+                    Timer time1 = new Timer();
+                    TimerTask task1 = new TimerTask() {
+                        @Override
+                        public void run() {
+                            game1Start();
+                            m.start();
+                            player1Btn.setClickable(true);
+                            player2Btn.setClickable(true);
+                        }
+                    };
+                    time1.schedule(task1, 5000);
 
-            }else{
-                init1();
+                } else {
+                    init1();
+                    player1Btn.setClickable(false);
+                    player2Btn.setClickable(false);
+                    m = MediaPlayer.create(getActivity(), R.raw.start);
+                    // stop for 5 second.
+                    Timer time1 = new Timer();
+                    TimerTask task1 = new TimerTask() {
+                        @Override
+                        public void run() {
+                            game1Start();
+                            m.start();
+                            player1Btn.setClickable(true);
+                            player2Btn.setClickable(true);
+                        }
+                    };
+                    time1.schedule(task1, 5000);
+                }
+            } else if (level == 2) {
                 player1Btn.setClickable(false);
                 player2Btn.setClickable(false);
-                m = MediaPlayer.create(getActivity(),R.raw.start);
-                // stop for 5 second.
-                Timer time1 = new Timer();
-                TimerTask task1 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        game1Start();
-                        m.start();
-                        player1Btn.setClickable(true);
-                        player2Btn.setClickable(true);
-                    }
-                };
-                time1.schedule(task1, 5000);
+                iv1.setImageResource(0);
+                Log.e("message", "ONSTART()");
+                if (player1Stop == 2 && player2Stop == 2) {
+                    init2();
+                    m = MediaPlayer.create(getActivity(), R.raw.start);
+                    // stop for 5 second.
+                    Timer time1 = new Timer();
+                    TimerTask task1 = new TimerTask() {
+                        @Override
+                        public void run() {
+                            game2Start();
+                            m.start();
+                            player1Btn.setClickable(true);
+                            player2Btn.setClickable(true);
+                        }
+                    };
+                    time1.schedule(task1, 5000);
+
+                    //play1Time.setTextColor(Color.rgb(249, 255, 134));
+                } else if (player1Stop == 1 && player2Stop == 1) {
+                    init2();
+                    player1Btn.setClickable(false);
+                    player2Btn.setClickable(false);
+                    m = MediaPlayer.create(getActivity(), R.raw.start);
+                    // stop for 5 second.
+                    Timer time1 = new Timer();
+                    TimerTask task1 = new TimerTask() {
+                        @Override
+                        public void run() {
+                            game2Start();
+                            m.start();
+                            player1Btn.setClickable(true);
+                            player2Btn.setClickable(true);
+                        }
+                    };
+                    time1.schedule(task1, 5000);
+
+                } else {
+                    init2();
+                    player1Btn.setClickable(false);
+                    player2Btn.setClickable(false);
+                    m = MediaPlayer.create(getActivity(), R.raw.start);
+                    // stop for 5 second.
+                    Timer time1 = new Timer();
+                    TimerTask task1 = new TimerTask() {
+                        @Override
+                        public void run() {
+                            game2Start();
+                            m.start();
+                            player1Btn.setClickable(true);
+                            player2Btn.setClickable(true);
+                        }
+                    };
+                    time1.schedule(task1, 5000);
+                }
+            } else if (level == 3) {
+
+            } else {
+
             }
-        }else if(level == 2){
-            player1Btn.setClickable(false);
-            player2Btn.setClickable(false);
-            iv1.setImageResource(0);
-            Log.e("message", "ONSTART()");
-            if(player1Stop == 2 && player2Stop == 2){
-                init2();
-                m = MediaPlayer.create(getActivity(),R.raw.start);
-                // stop for 5 second.
-                Timer time1 = new Timer();
-                TimerTask task1 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        game2Start();
-                        m.start();
-                        player1Btn.setClickable(true);
-                        player2Btn.setClickable(true);
-                    }
-                };
-                time1.schedule(task1, 5000);
-
-                //play1Time.setTextColor(Color.rgb(249, 255, 134));
-            }else if(player1Stop == 1 && player2Stop == 1){
-                init2();
-                player1Btn.setClickable(false);
-                player2Btn.setClickable(false);
-                m = MediaPlayer.create(getActivity(),R.raw.start);
-                // stop for 5 second.
-                Timer time1 = new Timer();
-                TimerTask task1 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        game2Start();
-                        m.start();
-                        player1Btn.setClickable(true);
-                        player2Btn.setClickable(true);
-                    }
-                };
-                time1.schedule(task1, 5000);
-
-            }else{
-                init2();
-                player1Btn.setClickable(false);
-                player2Btn.setClickable(false);
-                m = MediaPlayer.create(getActivity(),R.raw.start);
-                // stop for 5 second.
-                Timer time1 = new Timer();
-                TimerTask task1 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        game2Start();
-                        m.start();
-                        player1Btn.setClickable(true);
-                        player2Btn.setClickable(true);
-                    }
-                };
-                time1.schedule(task1, 5000);
-            }
-        }else if(level == 3){
-
-        }else{
-
         }
 
     }
